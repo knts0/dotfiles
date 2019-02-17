@@ -1,0 +1,38 @@
+" IDEA Vim向けのkeymap設定
+" 参考：https://qiita.com/sei40kr/items/09e7e92eb7686f9b5950
+
+
+" 検索をIDEA純正にする
+nnoremap / :<C-u>action Find<CR>
+
+" ジャンプ機能をIDEA純正にする
+nnoremap <C-o> :<C-u>action Back<CR>
+nnoremap <C-i> :<C-u>action Forward<CR>
+nnoremap <C-S-o> <C-o>
+nnoremap <C-S-i> <C-i>
+" 前/次のメソッド定義へジャンプ
+nnoremap [m :<C-u>action MethodUp<CR>
+nnoremap ]m :<C-u>action MethodDown<CR>
+" 前/次の変更箇所へジャンプ
+nnoremap [c :<C-u>action VcsShowPrevChangeMarker<CR>
+nnoremap ]c :<C-u>action VcsShowNextChangeMarker<CR>
+" 前/次のエラー箇所へジャンプ
+nnoremap [e :<C-u>action GotoPreviousError<CR>
+nnoremap ]e :<C-u>action GotoNextError<CR>
+
+
+" タグジャンプ
+nnoremap K :<C-u>action QuickJavaDoc<CR>
+nnoremap gjK :<C-u>action GotoDeclaration<CR>
+nnoremap gjk :<C-u>action GotoTypeDeclaration<CR>
+nnoremap gji :<C-u>action GotoImplementation<CR>
+nnoremap gjs :<C-u>action GotoSuperMethod<CR>
+nnoremap gjt :<C-u>action GotoTest<CR>
+nnoremap <C-k> :<C-u>action ShowUsages<CR>
+
+
+" コードリファクタリング
+nnoremap cre :<C-u>action RenameElement<CR>
+nnoremap cS :<C-u>action ChangeSignature<CR>
+nnoremap cts :<C-u>action ChangeTypeSignature<CR>
+

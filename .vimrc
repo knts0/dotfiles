@@ -1,3 +1,28 @@
+" *** プラグイン系
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+" 導入したいプラグインを以下に列挙
+" Plugin '[Github Author]/[Github repo]' の形式で記入
+Plugin 'yonchu/accelerated-smooth-scroll'
+Plugin 'reireias/vim-cheatsheet'
+
+call vundle#end()
+filetype plugin indent on
+
+" その他のカスタム設定を以下に書く
+"" vim-cheatsheet
+let g:cheatsheet#cheat_file = '~/.cheatsheet.md'
+
+
+" 共通keymap設定読み込み
+source .vimrc.keymap
+
+
 " vimの内部文字コードをUTF-8に設定
 set encoding=utf-8
 " ファイルの文字コードを設定
@@ -19,10 +44,6 @@ set hidden
 set showcmd
 " ステータスラインを常に表示
 set laststatus=2
-" ファイルナンバー表示
-" set statusline=[%n]
-" ホスト名表示
-"set statusline+=%{matchstr(hostname(),'\\w\\+')}@
 " ファイル名表示
 set statusline+=%<%F
 " 変更のチェック表示
@@ -64,10 +85,17 @@ set cursorline
 set cursorcolumn
 " ウィンドウタイトルを設定する
 set title
-" 行末の1文字先までカーソルを移動できるように
-set virtualedit=onemore
+" 矩形選択で行末より後ろもカーソルを置けるように
+set virtualedit=block
 " インデントはスマートインデント
 set smartindent
+set autoindent
+" 行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする。
+set smarttab
+" ターミナル上からの貼り付けを許可
+set paste
+" フォーマット揃えをコメント以外有効にする
+set formatoptions-=c
 " ビープ音すべてを無効化し、可視化
 set visualbell t_vb=
 set noerrorbells "エラーメッセージの表示時にビープを鳴らさない
@@ -75,19 +103,9 @@ set noerrorbells "エラーメッセージの表示時にビープを鳴らさ�
 set showmatch
 " コマンドラインの補完
 set wildmode=list:longest
-" 矢印キーでは表示行単位で行移動する
-nmap <UP> gk
-nmap <DOWN> gj
-vmap <UP> gk
-vmap <DOWN> gj
-nnoremap j gj
-nnoremap k gk
-noremap <Space><CR> o<ESC>
-inoremap <silent> jj <ECS> "jjをエスケープにマッピング
 
 
-
-" *** Tab系
+" *** Tab文字系
 " 不可視文字を可視化(タブが「▸-」と表示される)
 set list listchars=tab:\▸\-
 " Tab文字を半角スペースにする
@@ -98,10 +116,6 @@ set tabstop=2
 set softtabstop=2
 " 行頭でのTab文字の表示幅
 set shiftwidth=2
-" タブ移動のキーマッピング（tmuxライクに）
-nnoremap <C-w> [unite]c :tabnew<CR>
-nnoremap <C-w> [unite]n gt
-nnoremap <C-w> [unite]p gT
 
 
 " *** 検索系
@@ -119,8 +133,6 @@ set wrapscan
 set hlsearch
 " コマンドラインモードで<Tab>キーによるファイル名補完を有効にする
 set wildmenu
-" ESC連打でハイライト解除
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " 対応する括弧を強調表示
 set showmatch
 
@@ -137,27 +149,3 @@ set background=dark
 colorscheme solarized
 set noundofile
 
-
-" *** プラグイン系
-" - nerdtree
-filetype off
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#begin(expand('~/.vim/bundle/'))
-  " insert here your Neobundle plugins
-  NeoBundle 'scrooloose/nerdtree' " nerdtree
-  call neobundle#end()
-endif
-
-filetype plugin indent on
-
-" キーバインド
-map <C-n> :NERDTreeToggle<CR>
-
-"set autoindent
-"set backupdir=$HOME/vimbackup
-"set directory=$HOME/vimbackup
-"set smarttab
-"nnoremap <ESC><ESC> :nohlsearch<CR>
-
-"syntax enable

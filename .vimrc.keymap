@@ -1,0 +1,24 @@
+" ***編集系
+noremap <Space><CR> o<ESC> "Space+Enter で空行挿入
+
+
+" ***移動系
+" 矢印キーでは表示行単位で行移動する
+nmap <UP> gk
+nmap <DOWN> gj
+vmap <UP> gk
+vmap <DOWN> gj
+nnoremap L $
+nnoremap H ^
+noremap ; : " :を押そうとして;を押した場合の対処
+
+
+" ***タブ系
+" タブ移動のキーマッピング（tmuxライクに）
+nnoremap <Space>c :tabnew<CR>
+nnoremap <C-n> gt
+nnoremap <C-p> gT
+
+
+" ESC連打でハイライト解除
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
