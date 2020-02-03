@@ -6,24 +6,28 @@ export LANG=ja_JP.UTF-8
 
 # パス
 export PATH=$PATH:/usr/local/bin/
-
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:${PATH}
+# nvm
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+# yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# android studio
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
+# rbenv
+export PATH="$HOME/.rbenv/shims:$PATH"
+# grep
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/grep/libexec/gnuman:$MANPATH"
+# Google Cloud SDK
+source $HOME/temp/google-cloud-sdk/path.zsh.inc
+source $HOME/temp/google-cloud-sdk/completion.zsh.inc
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
-
-# rbenv
-export RBENV_ROOT="$HOME/.rbenv"
-export PATH="$RBENV_ROOT:$PATH"
-eval "$(rbenv init -)"
-
-# nodebrew
-export PATH="$HOME/.nodebrew/current/bin:$PATH"
-
-# yarn
-export PATH="$HOME/.yarn/bin:$PATH"
-
 
 # 色を使用
 autoload -Uz colors
@@ -131,8 +135,8 @@ zstyle ':zle:*' word-style unspecified
 setopt no_flow_control
 
 # プロンプトを2行で表示、時刻を表示
-DEFAULT=$'\U1F914 '
-ERROR=$'\U1F631 '
+DEFAULT=$'>'
+ERROR=$'>'
 PROMPT="%(?.%{${fg[green]}%}.%{${fg[red]}%})%n${reset_color}@${fg[blue]}%m${reset_color}(%*%) %~
 %(?.${DEFAULT}.${ERROR})  "
 
