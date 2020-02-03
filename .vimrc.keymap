@@ -10,7 +10,6 @@ vmap <UP> gk
 vmap <DOWN> gj
 nnoremap L $
 nnoremap H ^
-noremap ; : " :を押そうとして;を押した場合の対処
 
 
 " ***タブ系
