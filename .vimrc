@@ -21,7 +21,7 @@ let g:cheatsheet#cheat_file = '~/.cheatsheet.md'
 
 
 " 共通keymap設定読み込み
-source .vimrc.keymap
+source ~/.vimrc.keymap
 
 
 " vimの内部文字コードをUTF-8に設定
