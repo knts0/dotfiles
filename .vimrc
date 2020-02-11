@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin '[Github Author]/[Github repo]' の形式で記入
 Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'reireias/vim-cheatsheet'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 filetype plugin indent on
