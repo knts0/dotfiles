@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'reireias/vim-cheatsheet'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'terryma/vim-expand-region'
 
 call vundle#end()
 filetype plugin indent on
