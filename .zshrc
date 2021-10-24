@@ -19,7 +19,7 @@ export LANG=ja_JP.UTF-8
 
 # パス
 export PATH=$PATH:/usr/local/bin/
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH=/usr/local/mysql/bin:${PATH}
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:${PATH}
 # nvm
 export NVM_DIR=~/.nvm
