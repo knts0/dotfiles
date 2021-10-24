@@ -1,1 +1,1 @@
-/Users/kana/dotfiles/.zprezto/runcoms/zprofile
+./.zprezto/runcoms/zprofile

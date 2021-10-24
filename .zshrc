@@ -19,13 +19,17 @@ export LANG=ja_JP.UTF-8
 
 # パス
 export PATH=$PATH:/usr/local/bin/
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PATH=/usr/local/mysql/bin:${PATH}
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:${PATH}
+
 # nvm
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-# export NVM_DIR=~/.nvm
-# source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
+
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # android studio
@@ -260,6 +264,13 @@ qiita() {
     fi
     open -a Google\ Chrome http://qiita.com/$opt
 }
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/kana.otawara/.sdkman"
+[[ -s "/Users/kana.otawara/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/kana.otawara/.sdkman/bin/sdkman-init.sh"
+
+export YVM_DIR=/Users/kana.otawara/.yvm
+[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/kana/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kana/google-cloud-sdk/path.zsh.inc'; fi
