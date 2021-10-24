@@ -1,1 +1,1 @@
-/Users/kana/dotfiles/.zprezto/runcoms/zlogout
+./.zprezto/runcoms/zlogout
