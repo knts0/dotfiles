@@ -260,3 +260,10 @@ qiita() {
     fi
     open -a Google\ Chrome http://qiita.com/$opt
 }
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/kana.otawara/.sdkman"
+[[ -s "/Users/kana.otawara/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/kana.otawara/.sdkman/bin/sdkman-init.sh"
+
+export YVM_DIR=/Users/kana.otawara/.yvm
+[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
