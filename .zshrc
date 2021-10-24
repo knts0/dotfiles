@@ -48,6 +48,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 eval "$(pyenv init -)"
+# java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # 色を使用
 autoload -Uz colors
@@ -203,7 +205,9 @@ zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
 zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
 zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
-precmd () { vcs_info }
+precmd () { 
+  vcs_info
+}
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
 
@@ -267,3 +271,28 @@ export SDKMAN_DIR="/Users/kana.otawara/.sdkman"
 
 export YVM_DIR=/Users/kana.otawara/.yvm
 [ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kana/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kana/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kana/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kana/google-cloud-sdk/completion.zsh.inc'; fi
+
+# tmux
+_tmux_refresh_client() {
+  if [ ! -z $TMUX ]; then
+    tmux refresh-client -S
+  fi
+}
+add-zsh-hook precmd _tmux_refresh_client
+
+export YVM_DIR=/Users/kana/.yvm
+[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/kana/.sdkman"
+[[ -s "/Users/kana/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/kana/.sdkman/bin/sdkman-init.sh"
+
+# anyenv
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"

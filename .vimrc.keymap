@@ -21,3 +21,8 @@ nnoremap <C-p> gT
 
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" expand-region plugin
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
