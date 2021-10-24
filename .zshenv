@@ -1,1 +1,1 @@
-/Users/kana/dotfiles/.zprezto/runcoms/zshenv
+./.zprezto/runcoms/zshenv
