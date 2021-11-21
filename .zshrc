@@ -43,7 +43,7 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="/usr/local/opt/gettext/bin:$PATH"
-eval "$(pyenv init -)"
+if [ -f "$HOME/.pyenv" ]; then eval "$(pyenv init -)"; fi
 # java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
