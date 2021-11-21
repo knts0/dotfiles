@@ -265,7 +265,7 @@ qiita() {
 export SDKMAN_DIR="/Users/kana.otawara/.sdkman"
 [[ -s "/Users/kana.otawara/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/kana.otawara/.sdkman/bin/sdkman-init.sh"
 
-export YVM_DIR=/Users/kana.otawara/.yvm
+export YVM_DIR="$HOME/.yvm"
 [ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -281,9 +281,6 @@ _tmux_refresh_client() {
   fi
 }
 add-zsh-hook precmd _tmux_refresh_client
-
-export YVM_DIR=/Users/kana/.yvm
-[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/kana/.sdkman"
