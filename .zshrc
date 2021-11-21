@@ -22,10 +22,6 @@ export PATH=$PATH:/usr/local/bin/
 export PATH=/usr/local/mysql/bin:${PATH}
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:${PATH}
 
-# nvm
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 # nodenv
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
