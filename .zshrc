@@ -37,8 +37,8 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/grep/libexec/gnuman:$MANPATH"
 # Google Cloud SDK
-source $HOME/temp/google-cloud-sdk/path.zsh.inc
-source $HOME/temp/google-cloud-sdk/completion.zsh.inc
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -267,12 +267,6 @@ export SDKMAN_DIR="/Users/kana.otawara/.sdkman"
 
 export YVM_DIR="$HOME/.yvm"
 [ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/kana/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kana/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/kana/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kana/google-cloud-sdk/completion.zsh.inc'; fi
 
 # tmux
 _tmux_refresh_client() {
