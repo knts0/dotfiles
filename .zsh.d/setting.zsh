@@ -2,6 +2,8 @@
 # Ctrl-Dでログアウトしてしまうのを防ぐ
 setopt IGNOREEOF
 
+
+########## 色 ##########
 # 色を使用
 autoload -Uz colors
 colors
@@ -13,6 +15,7 @@ export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46
 # lsコマンドの補完候補に色付き表示
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
+########## 補完 ##########
 # 補完（ディレクトリ名をtabを押して補完するとき、選択中のものに色を付ける）
 autoload -Uz compinit
 compinit
@@ -32,6 +35,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # ディレクトリ選択時、最後の/を残す
 setopt noautoremoveslash
 
+
+########## 履歴 ##########
 # ヒストリーの設定
 HISTFILE=~/.zsh_history # 履歴を保存するファイル
 HISTSIZE=10000          # メモリ上に保存する履歴のサイズ
