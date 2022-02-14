@@ -20,6 +20,14 @@ compinit
 setopt list_packed
 # 補完候補一覧でファイルの種別を識別マーク表示（ls -F の記号）
 setopt list_types
+# 補完候補を一覧から選択する
+zstyle ':completion:*:default' menu select
+# lsコマンドの補完候補に色付き表示
+zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
+# 補完後、メニュー選択モードになり左右キーで移動が出来る
+zstyle ':completion:*:default' menu select=2
+# 補完で大文字にもマッチ
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # ディレクトリ選択時、最後の/を残す
 setopt noautoremoveslash
