@@ -47,6 +47,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 if [ -f "$HOME/.pyenv" ]; then eval "$(pyenv init -)"; fi
+# VSCode
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
 # java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
