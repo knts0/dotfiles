@@ -12,8 +12,6 @@ colors
 export LSCOLORS=exfxcxdxbxegedabagacad
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
-# lsコマンドの補完候補に色付き表示
-zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 
 ########## 補完 ##########
 # 補完（ディレクトリ名をtabを押して補完するとき、選択中のものに色を付ける）
@@ -48,7 +46,6 @@ setopt append_history       # 履歴を追加（毎回.zsh_historyを作らな�
 setopt inc_append_history   # 履歴をインクリメンタルに追加
 setopt hist_no_store        # historyコマンドは履歴に登録しない
 setopt hist_reduce_blanks   # 余分な空白は詰めて記録
-zstyle ':completion:*:default' menu select
 
 # cdコマンドを省略して、ディレクトリ名のみの入力で移動
 setopt auto_cd
@@ -77,11 +74,6 @@ select-word-style default
 zstyle ':zle:*' word-chars "_-./;@"
 zstyle ':zle:*' word-style unspecified
 
-# 補完後、メニュー選択モードになり左右キーで移動が出来る
-zstyle ':completion:*:default' menu select=2
-
-# 補完で大文字にもマッチ
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # cdrコマンドを有効 ログアウトしても有効なディレクトリ履歴
 # cdr タブでリストを表示
