@@ -25,9 +25,9 @@ setopt list_types
 setopt noautoremoveslash
 
 # ヒストリーの設定
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTFILE=~/.zsh_history # 履歴を保存するファイル
+HISTSIZE=10000          # メモリ上に保存する履歴のサイズ
+SAVEHIST=10000          # ファイルに保存する履歴のサイズ
 setopt hist_ignore_all_dups # ヒストリーに重複を表示しない
 setopt hist_ignore_dups     # 直前と同じコマンドラインはヒストリに追加しない
 setopt share_history        # 他のターミナルとヒストリーを共有
