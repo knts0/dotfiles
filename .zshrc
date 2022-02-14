@@ -17,6 +17,9 @@ setopt IGNOREEOF
 # 日本語を使用
 export LANG=ja_JP.UTF-8
 
+# エディタ
+export EDITOR=/usr/bin/vim
+
 # パス
 export PATH=$PATH:/usr/local/bin/
 export PATH=/usr/local/mysql/bin:${PATH}
