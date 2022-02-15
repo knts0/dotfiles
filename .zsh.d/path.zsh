@@ -26,7 +26,7 @@ if [ -f "$HOME/.pyenv" ]; then eval "$(pyenv init -)"; fi
 
 # anyenv
 export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+if [ -f "$HOME/.anyenv" ]; then eval "$(anyenv init -)"; fi
 
 # java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
