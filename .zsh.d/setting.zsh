@@ -2,6 +2,12 @@
 # Ctrl-Dでログアウトしてしまうのを防ぐ
 setopt IGNOREEOF
 
+# ビープ音の停止
+setopt no_beep
+
+# ビープ音の停止
+setopt nolistbeep
+
 
 ########## 色 ##########
 # 色を使用
