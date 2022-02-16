@@ -33,7 +33,7 @@ zstyle ':completion:*:default' menu select
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 # 補完後、メニュー選択モードになり左右キーで移動が出来る
 zstyle ':completion:*:default' menu select=2
-# 補完で大文字にもマッチ
+# 補完で小文字で入力した文字も大文字にもマッチ
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # ディレクトリ選択時、最後の/を残す
