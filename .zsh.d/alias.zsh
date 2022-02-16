@@ -28,6 +28,7 @@ alias ga='git add'
 alias gps='git push'
 alias gpl='git pull'
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gl='git log'
 alias gco='git checkout'
 
