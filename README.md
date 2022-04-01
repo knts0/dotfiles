@@ -16,3 +16,6 @@ vimを起動→`:PluginInstall`を実行
 ```
 brew install tmux
 ```
+
+## ターミナルのプロファイルを変更
+[Iceberg](http://cocopon.github.io/iceberg.vim/)
