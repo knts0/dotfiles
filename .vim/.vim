@@ -1,1 +1,0 @@
-/Users/kana/dotfiles/.vim
