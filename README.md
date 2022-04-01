@@ -19,3 +19,6 @@ brew install tmux
 
 ## ターミナルのプロファイルを変更
 [Iceberg](http://cocopon.github.io/iceberg.vim/)
+
+## フォントの設定
+等幅フォント・[MyricaM](https://myrica.estable.jp/myricamhistry/)を入れる
