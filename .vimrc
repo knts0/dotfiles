@@ -1,7 +1,7 @@
 " *** プラグイン系
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim/
+set rtp+=~/.vim/Vundle.vim/
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
