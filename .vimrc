@@ -209,5 +209,5 @@ set wildmode=list:longest
 set visualbell t_vb=
 set noerrorbells "エラーメッセージの表示時にビープを鳴らさない
 
-" コマンドラインモードで<Tab>キーによるファイル名補完を有効にする
+" コマンドラインモードで<Tab>キーによる補完候補をステータスラインに表示
 set wildmenu
