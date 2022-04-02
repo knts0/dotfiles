@@ -16,6 +16,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'terryma/vim-expand-region'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
+Plugin 'itchyny/lightline.vim'
 
 call vundle#end()
 
@@ -81,40 +82,10 @@ set showcmd
 " ステータスラインを常に表示
 set laststatus=2
 
-" ファイル名表示
-set statusline+=%<%F
-
-" 変更のチェック表示
-set statusline+=%m
-
-" 読み込み専用かどうか表示
-set statusline+=%r
-
-" ヘルプページなら[HELP]と表示
-set statusline+=%h
-
-" プレビューウインドウなら[Prevew]と表示
-set statusline+=%w
-
-" これ以降は右寄せ表示
-set statusline+=%=
-
-" 改行コード表示
-let dic_line = { 'dos': 'CRLF', 'unix': 'CR', 'mac': 'LF' }
-let f = &fileformat " 改行コード取得
-let s = ''
-if has_key(dic_line, f)
-  let s = dic_line[f]
-else
-  let s = 'unknonw'
-endif
-set statusline+=[%{s}]
-
-" 文字コード表示
-set statusline+=[%{has('multi_byte')&&\&fileencoding!=''?&fileencoding:&encoding}]
-
-" ファイルタイプ表示
-set statusline+=%y
+" lightline.vimプラグインの設定
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
 
 
 """""""""""""""""""""""""""""""""
