@@ -1,7 +1,3 @@
-" ***編集系
-noremap <Space><CR> o<ESC> "Space+Enter で空行挿入
-
-
 " ***移動系
 " 矢印キーでは表示行単位で行移動する
 nmap <UP> gk
