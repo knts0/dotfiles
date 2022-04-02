@@ -133,6 +133,10 @@ set cursorcolumn
 set background=dark
 colorscheme solarized
 
+# 色設定
+if !has('gui_running')
+  set t_Co=256
+endif
 
 """""""""""""""""""""""""""""""""
 """ 編集
