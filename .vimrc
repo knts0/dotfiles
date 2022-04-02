@@ -18,6 +18,8 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
 
 call vundle#end()
+
+" ファイルタイププラグイン（ファイルの種類に応じて自動で設定を行うようなプラグイン）
 filetype plugin indent on
 
 " その他のカスタム設定を以下に書く
