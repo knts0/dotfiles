@@ -110,7 +110,7 @@ set statusline+=%y
 set number
 " 現在の行を強調表示
 set cursorline
-" 現在の行を強調表示（縦）
+" 現在の列を強調表示
 set cursorcolumn
 " 矩形選択で行末より後ろもカーソルを置けるように
 set virtualedit=block
