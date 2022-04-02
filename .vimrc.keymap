@@ -7,14 +7,6 @@ vmap <DOWN> gj
 nnoremap L $
 nnoremap H ^
 
-
-" ***タブ系
-" タブ移動のキーマッピング（tmuxライクに）
-nnoremap <Space>c :tabnew<CR>
-nnoremap <C-n> gt
-nnoremap <C-p> gT
-
-
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
