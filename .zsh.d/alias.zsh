@@ -13,9 +13,8 @@ alias ll='ls -l'
 alias gls="gls --color"
 
 # vim
-alias v='vim'
-alias vi='vim'
-alias vz='vim ~/.zshrc'
+alias vi='nvim'
+alias vim='nvim'
 alias c='cdr'
 
 # gitエイリアス
