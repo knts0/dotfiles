@@ -108,16 +108,10 @@ set statusline+=%y
 """""""""""""""""""""""""""""""""
 " 行番号を表示
 set number
-" ルーラーを表示
-set ruler
-" コマンドラインの高さ
-set cmdheight=1
 " 現在の行を強調表示
 set cursorline
 " 現在の行を強調表示（縦）
 set cursorcolumn
-" ウィンドウタイトルを設定する
-set title
 " 矩形選択で行末より後ろもカーソルを置けるように
 set virtualedit=block
 " インデントはスマートインデント
