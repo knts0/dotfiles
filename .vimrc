@@ -71,6 +71,8 @@ set autoread
 " バッファが編集中でもその他のファイルを開けるように
 set hidden
 
+set noundofile
+
 
 """""""""""""""""""""""""""""""""
 """ ステータスライン
@@ -197,9 +199,6 @@ set wrapscan
 " 検索語をハイライト表示
 set hlsearch
 
-" コマンドラインモードで<Tab>キーによるファイル名補完を有効にする
-set wildmenu
-
 
 """""""""""""""""""""""""""""""""
 """ その他
@@ -211,4 +210,5 @@ set wildmode=list:longest
 set visualbell t_vb=
 set noerrorbells "エラーメッセージの表示時にビープを鳴らさない
 
-set noundofile
+" コマンドラインモードで<Tab>キーによるファイル名補完を有効にする
+set wildmenu
