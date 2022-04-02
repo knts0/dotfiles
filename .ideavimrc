@@ -16,4 +16,4 @@ call vundle#end()
 """""""""""""""""""""""""""""""""
 """ ベース設定の読み込み
 """"""""""""""""""""""""""""""""
-source $HOME/dotfiles/.basevimr
+source $HOME/dotfiles/.basevimrc
