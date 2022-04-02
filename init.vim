@@ -3,6 +3,7 @@
 """""""""""""""""""""""""""""""""
 call plug#begin()
 
+Plug 'altercation/vim-colors-solarized'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
 
