@@ -32,4 +32,4 @@ let g:cheatsheet#cheat_file = '~/.cheatsheet.md'
 """""""""""""""""""""""""""""""""
 """ ベース設定の読み込み
 """"""""""""""""""""""""""""""""
-source ~/.basevimrc
+source $HOME/dotfiles/.basevimrc
