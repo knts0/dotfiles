@@ -1,7 +1,9 @@
-" *** プラグイン
+"""""""""""""""""""""""""""""""""
+""" プラグイン
+"""""""""""""""""""""""""""""""""
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/Vundle.vim/
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
@@ -17,3 +19,9 @@ call vundle#end()
 """ ベース設定の読み込み
 """""""""""""""""""""""""""""""""
 source $HOME/dotfiles/.basevimrc
+
+
+"""""""""""""""""""""""""""""""""
+""" Ideavim用のキーマップ設定
+"""""""""""""""""""""""""""""""""
+source $HOME/dotfiles/.ideavimrc.keymap
