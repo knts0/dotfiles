@@ -112,6 +112,15 @@ set number
 set cursorline
 " 現在の列を強調表示
 set cursorcolumn
+
+" テーマ
+set background=dark
+colorscheme solarized
+
+
+"""""""""""""""""""""""""""""""""
+""" 編集
+"""""""""""""""""""""""""""""""""
 " 矩形選択で行末より後ろもカーソルを置けるように
 set virtualedit=block
 " インデントはスマートインデント
@@ -119,17 +128,14 @@ set smartindent
 set autoindent
 " 行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする。
 set smarttab
+" ヤンクでクリップボードにコピー
+set clipboard=unnamed,autoselect
 " ターミナル上からの貼り付けを許可
 set paste
 " フォーマット揃えをコメント以外有効にする
 set formatoptions-=c
-" ビープ音すべてを無効化し、可視化
-set visualbell t_vb=
-set noerrorbells "エラーメッセージの表示時にビープを鳴らさない
 " 括弧入力時の対応する括弧を表示
 set showmatch
-" コマンドラインの補完
-set wildmode=list:longest
 
 
 """""""""""""""""""""""""""""""""
@@ -169,16 +175,13 @@ set showmatch
 
 
 """""""""""""""""""""""""""""""""
-""" 編集
+""" その他
 """""""""""""""""""""""""""""""""
-" ヤンクでクリップボードにコピー
-set clipboard=unnamed,autoselect
+" コマンドラインの補完
+set wildmode=list:longest
 
+" ビープ音すべてを無効化し、可視化
+set visualbell t_vb=
+set noerrorbells "エラーメッセージの表示時にビープを鳴らさない
 
-"""""""""""""""""""""""""""""""""
-""" テーマ
-"""""""""""""""""""""""""""""""""
-set background=dark
-colorscheme solarized
 set noundofile
-
