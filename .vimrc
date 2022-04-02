@@ -170,8 +170,6 @@ set wrapscan
 set hlsearch
 " コマンドラインモードで<Tab>キーによるファイル名補完を有効にする
 set wildmenu
-" 対応する括弧を強調表示
-set showmatch
 
 
 """""""""""""""""""""""""""""""""
