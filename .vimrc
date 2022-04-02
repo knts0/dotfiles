@@ -140,8 +140,12 @@ colorscheme solarized
 " 矩形選択で行末より後ろもカーソルを置けるように
 set virtualedit=block
 
-" インデントはスマートインデント
+" インデントを考慮して改行
 set smartindent
+
+" インデントのスペースの数
+set shiftwidth=2
+
 set autoindent
 
 " 行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする。
@@ -174,9 +178,6 @@ set tabstop=2
 
 " キーボードで<TAB>を入力した際に、何文字の空白に変換するか設定
 set softtabstop=2
-
-" 行頭でのTab文字の表示幅
-set shiftwidth=2
 
 
 """""""""""""""""""""""""""""""""
