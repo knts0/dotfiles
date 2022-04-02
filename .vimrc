@@ -17,6 +17,7 @@ Plugin 'terryma/vim-expand-region'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
 Plugin 'itchyny/lightline.vim'
+Plugin 'tpope/vim-fugitive'   " git plugin
 
 call vundle#end()
 
@@ -83,9 +84,24 @@ set showcmd
 set laststatus=2
 
 " lightline.vimプラグインの設定
+" mode: NORMALやINSERTなど、readonly: 読み取り専用かどうか、filename:、modified：ファイルの変更状態
 let g:lightline = {
       \ 'colorscheme': 'solarized',
+      \ 'active': {
+     	        \ 'left': [ ['mode', 'paste'], ['readonly', 'branchName', 'filepath', 'modified'] ]
+     	        \ },
+      \ 'component_function':{
+              \ 'filepath': 'FilePath',
+              \ },
       \ }
+
+function! FilePath()
+  if winwidth(0) > 90
+	  return expand("%:s")
+  else
+    return expand("%:t")
+  endif
+endfunction
 
 
 """""""""""""""""""""""""""""""""
