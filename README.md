@@ -12,9 +12,16 @@ vimについては、プラグインをVundleで管理しており、`.vim/bundl
 ## Vundleでプラグインを実行
 vimを起動→`:PluginInstall`を実行
 
-## brewでtmuxをインストール
+## brewで必要なツールをインストール
 ```
+# tmux
 brew install tmux
+
+# starship
+brew install starship
+
+# im-select
+brew tap daipeihust/tap && brew install im-select
 ```
 
 ## ターミナルのプロファイルを変更
