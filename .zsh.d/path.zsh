@@ -47,3 +47,6 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 
 # VSCode
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
+# cargo
+. "$HOME/.cargo/env"
