@@ -1,7 +1,12 @@
 # 概要
 tmux, vim, zshの設定ファイルを管理している。
 
-vimについては、プラグインをVundleで管理しており、`.vim/bundle`の下にインストールされるようにしている。（このディレクトリ配下はgit ignoreする）
+## vim
+- init.vim：neovimの設定ファイル。ターミナルから使う際や、VSCodeの拡張で使用される。
+- .ideavimrc：IntelliJ IDEAのvim拡張の設定ファイル。
+- .basevimrc：共通の設定を切り出したもの
+
+プラグインをvim-plugで管理しており、`.vim/bundle`の下にインストールされるようにしている。（このディレクトリ配下はgit ignoreする）
 
 # 新しい環境でやること
 ## setup.shを実行
