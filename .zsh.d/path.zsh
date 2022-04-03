@@ -29,6 +29,7 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 if [ -f "$HOME/.anyenv" ]; then eval "$(anyenv init -)"; fi
 
 # java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 
@@ -49,7 +50,7 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 # cargo
-. "$HOME/.cargo/env"
+if [ -f "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
 
 # brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
