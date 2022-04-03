@@ -6,6 +6,3 @@ export EDITOR=/usr/bin/vim
 
 # 色設定
 export TERM=xterm-256color
-
-# starship
-eval "$(starship init zsh)"

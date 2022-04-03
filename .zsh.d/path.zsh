@@ -50,3 +50,9 @@ export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PA
 
 # cargo
 . "$HOME/.cargo/env"
+
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# starship
+eval "$(starship init zsh)"
