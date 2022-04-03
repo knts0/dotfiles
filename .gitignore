@@ -1,5 +1,6 @@
-# tmuxのプラグインは無視
-.tmux/plugins
+# tmuxのプラグインは無視（tpm以外）
+.tmux/plugins/*
+!.tmux/plugins/tpm
 
 # vundleのプラグインは無視
 .vim/bundle
