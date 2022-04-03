@@ -14,6 +14,9 @@ vimを起動→`:PluginInstall`を実行
 
 ## brewで必要なツールをインストール
 ```
+# neovim
+brew install neovim
+
 # tmux
 brew install tmux
 
