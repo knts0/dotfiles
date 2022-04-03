@@ -9,3 +9,6 @@ done
 
 # neovim setting file
 ln -s $HOME/dotfiles/init.vim $HOME/.config/nvim/init.vim
+
+# starship setting file
+ln -s $HOME/dotfiles/starship.toml $HOME/.config/starship.toml
