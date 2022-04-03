@@ -1,3 +1,6 @@
+# tmuxのプラグインは無視
+.tmux/plugins
+
 # vundleのプラグインは無視
 .vim/bundle
 .vim/.netrwhist
