@@ -25,6 +25,10 @@ brew install starship
 
 # im-select
 brew tap daipeihust/tap && brew install im-select
+
+# fira code
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
 ```
 
 ## ターミナルのプロファイルを変更
