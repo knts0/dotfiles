@@ -52,8 +52,5 @@ export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PA
 # cargo
 if [ -f "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
 
-# brew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # starship
 eval "$(starship init zsh)"
