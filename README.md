@@ -23,8 +23,8 @@ zinitでプラグイン管理
 ./setup.sh
 ```
 
-## Vundleでプラグインを実行
-vimを起動→`:PluginInstall`を実行
+## neovimプラグインをインストール
+neovimを起動→`:PlugInstall`を実行
 
 ## brewで必要なツールをインストール
 ```
