@@ -14,6 +14,9 @@ tmux-mem-cpu-loadプラグインの実行ファイル作成に`cmake`が必要�
 
 プラグインをvim-plugで管理しており、`.vim/bundle`の下にインストールされるようにしている。（このディレクトリ配下はgit ignoreする）
 
+## zsh
+zinitでプラグイン管理
+
 # 新しい環境でやること
 ## setup.shを実行
 ```
