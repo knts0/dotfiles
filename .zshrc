@@ -30,4 +30,10 @@ autoload -Uz _zinit
 # コマンド補完
 zinit light zsh-users/zsh-autosuggestions 
 
+# シンタックスハイライト
+zinit light zdharma/fast-syntax-highlighting
+
+# Ctrl + rでコマンド履歴を検索
+zinit load zdharma/history-search-multi-word
+
 load 
