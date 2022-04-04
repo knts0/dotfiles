@@ -43,6 +43,10 @@ brew tap daipeihust/tap && brew install im-select
 # fira code
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
+
+# zinitのインストール
+sh -c "$(curl -fsSL https://git.io/zinit-install)"
+zinit self-update
 ```
 
 ## ターミナルのプロファイルを変更
