@@ -27,6 +27,7 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+# コマンド補完
 zinit light zsh-users/zsh-autosuggestions 
 
 load 
