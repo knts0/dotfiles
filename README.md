@@ -31,6 +31,10 @@ neovimを起動→`:PlugInstall`を実行
 # neovim
 brew install neovim
 
+# vim-plug
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 # tmux
 brew install tmux
 
