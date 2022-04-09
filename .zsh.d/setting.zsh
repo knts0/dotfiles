@@ -62,9 +62,6 @@ setopt auto_pushd
 # pushdから重複を削除
 setopt pushd_ignore_dups
 
-# コマンドミスを修正
-setopt correct
-
 # Ctrl+sのロック, Ctrl+qのロック解除を無効にする
 setopt no_flow_control
 
