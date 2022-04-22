@@ -29,6 +29,7 @@ alias gc='git commit'
 alias gcm='git commit -m'
 alias gl='git log'
 alias gco='git checkout'
+alias gf='git fetch'
 
 # historyに日付を表示
 alias h='fc -lt '%F %T' 1'
