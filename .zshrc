@@ -35,5 +35,3 @@ zinit light zdharma/fast-syntax-highlighting
 
 # Ctrl + rでコマンド履歴を検索
 zinit load zdharma/history-search-multi-word
-
-load 
