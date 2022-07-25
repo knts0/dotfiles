@@ -117,17 +117,17 @@ bindkey "^p" history-beginning-search-backward-end
 bindkey "^b" history-beginning-search-forward-end
 
 # Show cwd when shell prompts for input.
-precmd() {
-   if overridden; then return; fi
-   cwd=${$(pwd)##*/} # Extract current working dir only
-   print -Pn "\e]0;$cwd$(gitDirty)\a" # Replace with $pwd to show full path
-}
+# precmd() {
+#   if overridden; then return; fi
+#   cwd=${$(pwd)##*/} # Extract current working dir only
+#   print -Pn "\e]0;$cwd$(gitDirty)\a" # Replace with $pwd to show full path
+# }
 
 # Prepend command (w/o arguments) to cwd while waiting for command to complete.
-preexec() {
-   if overridden; then return; fi
-   printf "\033]0;%s\a" "${1%% *} | $cwd$(gitDirty)" # Omit construct from $1 to show args
-}
+# preexec() {
+#    if overridden; then return; fi
+#    printf "\033]0;%s\a" "${1%% *} | $cwd$(gitDirty)" # Omit construct from $1 to show args
+# }
 
 # tmux
 _tmux_refresh_client() {
