@@ -38,3 +38,10 @@ qiita() {
     fi
     open -a Google\ Chrome http://qiita.com/$opt
 }
+
+select-history() {
+  # コマンドの実行履歴をfzfで選択し、コマンドラインへ書き込む
+  BUFFER=$(history -n -r 1 | fzf --query "$BUFFER")
+  # カーソルをコマンドラインの右端に移動
+  CURSOR=$#BUFFER
+}

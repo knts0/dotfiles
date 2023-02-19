@@ -107,6 +107,10 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 bindkey '^r' history-incremental-pattern-search-backward
 bindkey '^s' history-incremental-pattern-search-forward
 
+# ヒストリーの検索にCtrl+Rを割り当てる
+zle -N select-history
+bindkey '^r' select-history
+
 # コマンドを途中まで入力後、historyから絞り込み
 # 例 ls まで打ってCtrl+pでlsコマンドをさかのぼる、Ctrl+bで逆順
 autoload -Uz history-search-end
