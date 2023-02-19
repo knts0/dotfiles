@@ -1,2 +1,2 @@
-# brew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# M1 Macでbrewのパスを通すためのコマンド
+if [ -e "/opt/homebrew/bin/brew" ]; then eval "$(/opt/homebrew/bin/brew shellenv)"; fi
