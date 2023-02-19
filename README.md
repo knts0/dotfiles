@@ -51,6 +51,9 @@ brew install --cask font-fira-code
 # zinitのインストール
 sh -c "$(curl -fsSL https://git.io/zinit-install)"
 zinit self-update
+
+# fzf
+brew install fzf
 ```
 
 ## ターミナルのプロファイルを変更
