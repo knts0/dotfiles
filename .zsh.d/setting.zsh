@@ -47,7 +47,6 @@ HISTSIZE=10000          # メモリ上に保存する履歴のサイズ
 SAVEHIST=10000          # ファイルに保存する履歴のサイズ
 setopt hist_ignore_all_dups # ヒストリーに重複を表示しない
 setopt hist_ignore_dups     # 直前と同じコマンドラインはヒストリに追加しない
-setopt share_history        # 他のターミナルとヒストリーを共有
 setopt append_history       # 履歴を追加（毎回.zsh_historyを作らない）
 setopt inc_append_history   # 履歴をインクリメンタルに追加
 setopt hist_no_store        # historyコマンドは履歴に登録しない
