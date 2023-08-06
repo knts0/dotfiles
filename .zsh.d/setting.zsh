@@ -139,3 +139,14 @@ _tmux_refresh_client() {
   fi
 }
 add-zsh-hook precmd _tmux_refresh_client
+
+# emacsキーバインドの設定を追加
+# [memo]
+# ctrl+a: 行頭へ移動
+# ctrl+e: 行末へ移動
+# ctrl+w: カーソル位置から単語単位で削除
+# ctrl+k: カーソル位置から行末まで削除
+# Esc+b: 単語単位で後方へ移動
+# Esc+f: 単語単位で前方へ移動
+# Esc+d: 単語単位で削除
+bindkey -e
