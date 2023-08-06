@@ -27,3 +27,10 @@ export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PA
 
 # starship
 eval "$(starship init zsh)"
+
+# direnv
+eval "$(direnv hook zsh)"
+
+# go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
