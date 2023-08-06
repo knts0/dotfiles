@@ -6,6 +6,7 @@ export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:${PATH}
 # nodenv
 export PATH="$HOME/.nodenv/bin:$PATH"
 if [ -e "$HOME/.nodenv" ]; then eval "$(nodenv init -)"; fi
+export PATH=/opt/homebrew/bin:$PATH
 
 # yvm
 export YVM_DIR="$HOME/.yvm"
