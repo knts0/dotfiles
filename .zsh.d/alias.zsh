@@ -28,7 +28,8 @@ alias gpl='git pull'
 alias gc='git commit'
 alias gcm='git commit -m'
 alias gl='git log'
-alias gco='git branch --format="%(refname:short)" | fzf | xargs git checkout'
+#alias gco='git branch --format="%(refname:short)" | fzf | xargs git checkout'
+alias gco='git checkout'
 alias gf='git fetch'
 
 # historyに日付を表示
