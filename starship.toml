@@ -1,18 +1,16 @@
 [time]
 disabled=false
-format = '🕙[\[ $time \]]($style) '
+format = '[\[ $time \]]($style) '
 
 [directory]
-truncation_length = 10
+truncation_length = 10 # ディレクトリ表示の最大文字数
 truncate_to_repo = false
 
 [aws]
 disabled=true
 
 [gcloud]
-disabled=true
+format = 'on [$symbol$account(@$domain)(\($project\))]($style) '
 
 [git_status]
-modified = "📝"
-untracked = "❓"
-
+# デフォルト設定を適用
